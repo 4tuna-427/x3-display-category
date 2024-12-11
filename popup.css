@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 180px;
+    margin: 0;
+}
+
+.context-menu {
+    background-color: #fff;
+}
+
+.context-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .item {
+        padding: 8px 14px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #f0f0f0;
+        }
+    }
+
+    .separator {
+        border-top: 1px solid #e0e0e0;
+    }
+}

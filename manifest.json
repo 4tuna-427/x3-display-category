@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "x3-display-category",
+    "version": "1.0.0",
+    "description": "三倍Ice cream の難易度表にフレア対象カテゴリを表すアイコンを表示します。",
+    "permissions": [
+        "activeTab",
+        "contextMenus",
+        "scripting",
+        "storage"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.3icecream.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "styles.css"
+            ],
+            "all_frames": true
+        }
+    ]
+}
