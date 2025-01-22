@@ -29,9 +29,9 @@
     }
 }
 
-.category-0,
 .category-1,
-.category-2 {
+.category-2,
+.category-3 {
     position: relative;
 
     &::after {
@@ -47,14 +47,14 @@
     }
 }
 
-.category-0::after {
+.category-1::after {
     background-color: rgb(226, 45, 45);
 }
 
-.category-1::after {
+.category-2::after {
     background-color: rgb(255, 255, 255);
 }
 
-.category-2::after {
+.category-3::after {
     background-color: rgb(255, 196, 0);
 }
